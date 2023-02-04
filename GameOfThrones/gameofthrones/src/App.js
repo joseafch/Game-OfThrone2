@@ -4,7 +4,7 @@ import Home from './pages/Home/Home';
 import Characters from './pages/Characters/Characters';
 import Houses from './pages/Houses/Houses';
 import Cronology from './pages/Cronology/Cronology';
-import CharactersDetail from './pages/Characters/CharactersDetail';
+import CharacterDetail from './pages/Characters/CharacterDetail';
 import HouseDetail from './pages/Houses/HouseDetail';
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -17,9 +17,9 @@ function App() {
       <Routes>
           <Route path="/" element={<Home></Home>}/>
           <Route path="/Characters" element={<Characters></Characters>} />
-          <Route path="/Characters/:id" element={<CharactersDetail></CharactersDetail>} />
+          <Route path="/Characters/:name" element={<CharacterDetail></CharacterDetail>} />
           <Route path="/Houses" element={<Houses></Houses>} />
-          <Route path="/Houses/:id" element={<HouseDetail></HouseDetail>} />
+          <Route path="/Houses/:name" element={<HouseDetail></HouseDetail>} />
           <Route path="/Cronology" element={<Cronology></Cronology>} />    
       </Routes>
 

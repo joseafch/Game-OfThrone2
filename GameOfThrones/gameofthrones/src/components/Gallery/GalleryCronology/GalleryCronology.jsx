@@ -1,23 +1,28 @@
-function GalleryCronology({list3}) {
-    return (
-      <div>
-      {list3.length>0&& list3.map((character, index) => (
-          <div  key={index}>
-            <div>
-              <div> <img src={character.image} alt="character"/></div>
-              <div> <p>{character.name}</p></div>
-            <div><p>{character?.age?.age}</p></div>
-            </div>
-              
-          </div>
-          
-      )
-       )
-       }
-      </div>
-    )
-  }
-  export default GalleryCronology
+import React from "react";
+import "./GalleryCronology.scss";
+
+
+
+
+function GalleryCronology({ list3 }) {
+  return (
+    <div className="c-Gallery_Crono">
+    <button>0</button>
+      {list3.length > 0 && list3.map((character, index) => (
+          <div  className="c-card_Crono"  key={index}>
+                <img className="c-img_Crono" src={character.image} alt="character" />
+                <p>{character.name}</p>
+                <p>{character?.age?.age}</p>
+                <div class="Rectangle-4"></div>
+                </div>
+        ))
+
+        }
+
+    </div>
+  );
+}
+export default GalleryCronology;
   // {list4.map((item, index) => (
   //   <div Key={index}>{character.name===item.name && <p>{item.age}</p>}</div>) )}
   // </div>
