@@ -1,0 +1,19 @@
+.background{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+   
+    
+    &__center{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        &--text{
+            font-size: 172px;
+            color: white;
+        }
+    }
+    
+}

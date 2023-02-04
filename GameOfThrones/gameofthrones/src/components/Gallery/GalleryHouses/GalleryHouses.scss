@@ -1,0 +1,11 @@
+.card{
+    width: 248px;  
+  height: 320px; 
+  display: flex;
+  flex-direction: column;
+  }
+  .div-padre{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }

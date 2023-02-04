@@ -1,0 +1,16 @@
+.background{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-content: center; */
+  background-image: url('../src/Imagenes/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 1080px;
+  /* object-fit: contain; */
+ 
+  
+
+  
+}
