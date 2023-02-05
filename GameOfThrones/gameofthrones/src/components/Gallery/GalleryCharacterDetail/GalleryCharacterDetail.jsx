@@ -7,19 +7,10 @@ function GalleryCharacterDetail({ list5 }) {
   return (
     <div>
       <h1>{patata}</h1>
-      {list5.length > 0 &&
-        list5.map((person, index) => (
-          <div key={index}>
-            <div>
-              
-              <p>{person?.name}</p>
-              <img src={person?.image} alt={person.name}></img>
-              {/* <p>{items.birth}</p> */}
-            </div>
-            {/* {console.log("no pirula")} */}
-          </div>
-        ))}
+      {list5.name}
+      
     </div>
+  
   );
 }
 export default GalleryCharacterDetail;

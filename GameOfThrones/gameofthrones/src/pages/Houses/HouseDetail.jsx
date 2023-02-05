@@ -16,11 +16,20 @@ const HouseDetail = () => {
     console.log('casa sola',res.data);
    setHouse(res.data)
 }
-useEffect(() => getHouse, [])
+
+const [HouseData, setHouseData2] = useState([]);
+const DB_URL2 = `https://api.got.show/api/show/houses/${name}`;
+const getHouseData2 = async () => {
+  const res = await axios.get(DB_URL2);
+  console.log('casa  dato 2',res.data);
+ setHouseData2(res.data)
+}
+useEffect(() =>getHouse, [])
+useEffect(() =>getHouseData2  , [])
 
   return (
     <div>
-    <GalleryHouseDetail list4={House}></GalleryHouseDetail>
+    <GalleryHouseDetail list4={House} listB4={[HouseData]}></GalleryHouseDetail>
     
     </div>
   )

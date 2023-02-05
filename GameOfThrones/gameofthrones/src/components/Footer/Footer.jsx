@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <Link to='/Characters'>CHARACTERS</Link>
-        <Link to='/Houses'>HOUSES</Link>
-        <Link to='/Cronology'>CRONOLOGY</Link>
+        <Link className="Link" to='/Characters'>CHARACTERS</Link>
+        <Link className="Link" to='/Houses'>HOUSES</Link>
+        <Link className="Link" to='/Cronology'>CRONOLOGY</Link>
       </div>
     </>
   )

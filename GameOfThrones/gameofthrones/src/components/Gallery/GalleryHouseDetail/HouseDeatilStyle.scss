@@ -1,0 +1,53 @@
+.div-principal{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.information{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.information-text{
+   width: 40%;
+   gap: 5px;
+   margin: 5px;
+    
+}
+.information-text-title{
+    // color: white;
+
+}
+.background-house{
+    background-color: black;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 14px;
+    color: gray;
+}
+h3{
+    font-weight:500;
+}
+.house-name{
+   text-align: center;
+}
+.name{
+    font-weight: 500;
+}
+.Religion-and-alliance{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    
+}

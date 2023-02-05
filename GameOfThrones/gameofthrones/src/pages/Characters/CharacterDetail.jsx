@@ -20,6 +20,7 @@ useEffect(() => getCharacter, [])
   return (
     <div>
     <GalleryCharacterDetail list5={Character}></GalleryCharacterDetail>
+{/* {console.log('esto es characters',Character)} */}
     
     </div>
   )
