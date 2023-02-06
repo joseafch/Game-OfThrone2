@@ -1,10 +1,14 @@
 
 .img-home{
     width: 50px;
-    background-color: aquamarine;
+    // background-color: aquamarine;
+    background:none;
 }
 .header{
-    // position: absolute;
-    // top: 0;
-    // right: 10px;
+  display: flex;
+  justify-content: end;
+}
+.bton-lenguaje{
+    background: none;
+    border: none;
 }

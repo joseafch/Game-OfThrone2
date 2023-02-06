@@ -1,16 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "./GalleryCharacters.scss";
+import { Link } from 'react-router-dom';
+
 
 function GalleryCharacters({list}) {
   return (
     <div className='cards'>
-    {list.map((character, index) => (
+    {list.length>0 && list.map((character, index) => (
         <div className='cards__card' key={index}>
-          <div className='card-items'>
-            <Link to={`/Characters/${character.name}`}><div className='cards__card--img'><img className='img-characters' src={character.image} alt="character"/></div></Link>
+        <Link to={`/Characters/${character.name}`} > <div className='card-items'>
+        <div className='cards__card--img'><img className='img-characters' src={character.image} alt="character"/></div> 
             <div className='cards__card--img--p--div'> <p className='cards__card--img--p'>{character.name}</p></div>
-          </div>
+          </div></Link>
            
         </div>
     ) )}

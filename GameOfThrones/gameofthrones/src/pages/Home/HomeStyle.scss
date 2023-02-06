@@ -3,7 +3,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 
    
     
@@ -17,4 +17,14 @@
         }
     }
     
+}
+.background__center--text{
+    color: white;
+    font-size: 172px;
+
+}
+.background__center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

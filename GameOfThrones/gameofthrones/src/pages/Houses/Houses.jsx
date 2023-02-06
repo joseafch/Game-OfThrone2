@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import GalleryHouses from '../../components/Gallery/GalleryHouses/GalleryHouses';
-
+import './HouseStyle.scss'
 const Houses = () => {
   const [Houses, setHouses] = useState([]);
   const DB_URL = "https://api.got.show/api/book/houses";
@@ -14,7 +14,7 @@ const Houses = () => {
   useEffect(() => getHouses, [])
   return ( 
     
-     <div>
+     <div className='div-content'>
      <GalleryHouses list2={Houses}></GalleryHouses>
      </div>
 )

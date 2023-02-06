@@ -4,10 +4,10 @@ import GalleryCharacters from '../../components/Gallery/GalleryCharacters/Galler
 import Search from '../../components/Search/Search';
 
 function Characters() {
-    const [characters, setCharacters] = useState([]);
-    const DB_URL = "https://api.got.show/api/show/characters/";
+    const [Characters, setCharacters] = useState([]);
+    const DB_URL = "https://api.got.show/api/show/characters/"
     
-    const getCharacters = async (searchText='') => {
+    const getCharacters = async (searchText = "") => {
         const res = await axios.get(DB_URL + searchText);
         console.log(res.data);
        setCharacters(res.data)
@@ -17,7 +17,7 @@ function Characters() {
       
        <div>
        {/* <Search onSubmit={getCharacters}></Search> */}
-       <GalleryCharacters list={characters}></GalleryCharacters>
+       <GalleryCharacters list={Characters}></GalleryCharacters>
        </div>
   )
 }

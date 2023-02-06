@@ -1,0 +1,83 @@
+.figure-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.name{
+    color: white;
+    font-size: 30px;
+    text-align: center
+}
+.image-person{
+    border-radius: 10px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2vw;
+}
+
+p{
+    font-size: 10px;
+    color:white;
+    letter-spacing: 0.1vw;
+}
+
+.topBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 300px;
+    }
+}
+
+.botBox{
+    width: 100%;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 20px 100px 0px;
+    justify-content: center;
+
+    &__field1{
+        margin: 20px;
+        overflow-y: auto;
+        // height: 300px;
+        width: 20%;
+        text-align: center;
+        img{
+            width:100%;
+            
+        }
+    }
+
+    &__field{
+
+        margin: 20px;
+        overflow-y: auto;
+        height: 250px;
+        width: 20%;
+        text-align: center;
+        
+        &::-webkit-scrollbar {
+            width: 4px;               /* width of the entire scrollbar */
+            
+          }
+          
+        &::-webkit-scrollbar-track {
+            background: #443d3d         /* color of the tracking area */
+          }
+          
+        &::-webkit-scrollbar-thumb {
+            background-color: white;    /* color of the scroll thumb */
+            border-radius: 10px;       /* roundness of the scroll thumb */
+            border: 0px solid orange;  /* creates padding around scroll thumb */
+          }
+
+    }
+}

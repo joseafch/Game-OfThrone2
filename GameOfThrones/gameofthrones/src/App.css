@@ -4,8 +4,14 @@
 }
 body{
   font-family: 'Game Of Thrones';
+  margin: 0;
+  padding: 0;
+ overflow: hidden;
+ scrollbar-gutter:none;
 }
+
 .background{
+  /* height: 100vh; */
   display:flex;
   flex-direction: column;
   justify-content: space-between;

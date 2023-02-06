@@ -1,15 +1,19 @@
 .card{
-    width: 248px;  
+    width: 20%;  
   height: 320px; 
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   }
   .div-padre{
+    width: 96%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       overflow-y: scroll;
-      height: 100vh;
+      height: 90vh;
       background: black;
       color: white;
       &--background{
@@ -35,4 +39,9 @@
       border-radius: 10px;       /* roundness of the scroll thumb */
       border: 0px solid orange;  /* creates padding around scroll thumb */
     }
+    }
+    
+    .img-house{
+      height: 310px;
+
     }

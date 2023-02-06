@@ -6,7 +6,7 @@
 // }
 .c-cronology{
     overflow-y: scroll;
-    height: 76vh;
+    height: 86vh;
     width: 60%;
     display: flex;
     flex-wrap: wrap;
@@ -15,8 +15,10 @@
 
 
     &--background{
+      
         display: flex;
         background-color: black;
+        // height: 92vh;
         flex-direction: column;
         align-items: center;
     }
@@ -82,6 +84,9 @@
 
     }
   
+}
+.c-cronology--background{
+  // height: 91vh;
 }
 
 
