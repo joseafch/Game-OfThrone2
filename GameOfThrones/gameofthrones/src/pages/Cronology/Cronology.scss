@@ -1,0 +1,98 @@
+// @font-face{
+//     font-family: 'GameofThrones';
+//     src: url('../font/game-of-thrones/Game\ of\ Thrones.ttf');
+//     font-style: normal;
+//     font-weight: normal;
+// }
+.c-cronology{
+    overflow-y: scroll;
+    height: 76vh;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    &--background{
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    &::-webkit-scrollbar {
+      width: 4px;               /* width of the entire scrollbar */
+      
+    }
+    
+  &::-webkit-scrollbar-track {
+      background: #443d3d         /* color of the tracking area */
+    }
+    
+  &::-webkit-scrollbar-thumb {
+      background-color: white;    /* color of the scroll thumb */
+      border-radius: 10px;       /* roundness of the scroll thumb */
+      border: 0px solid orange;  /* creates padding around scroll thumb */
+    }
+
+    &--btn{
+      border-radius: 50%;
+      border: solid 2px white;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      margin-top: 20px;
+
+    }
+
+
+    &--card{
+        // height: 30rem;
+        display: flex;
+        width: 34%;
+        border-top: 2px solid rgb(255, 255, 255);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+
+      &__img{
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+
+      &__age{
+        color:white;
+        font-family: 'GameofThrones';
+      }
+
+      &__name{
+        text-align: center;
+        font-size: 18px;   
+        color: white;
+        font-family: 'GameofThrones';
+      }
+
+    }
+  
+}
+
+
+// @media screen and (max-width: 700px) {
+
+//   .c-cronology--card__name {
+//     font-size: 10px;
+//   }
+
+//   .c-cronology--card__img {
+//     width: 75px;
+//     height: 75px;
+//   }
+// }

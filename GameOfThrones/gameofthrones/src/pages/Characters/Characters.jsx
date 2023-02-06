@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import GalleryCharacters from '../../components/Gallery/GalleryCharacters/GalleryCharacters';
+import Search from '../../components/Search/Search';
 
 function Characters() {
-    const [Characters, setCharacters] = useState([]);
+    const [characters, setCharacters] = useState([]);
     const DB_URL = "https://api.got.show/api/show/characters/";
     
-    const getCharacters = async () => {
-        const res = await axios.get(DB_URL);
+    const getCharacters = async (searchText='') => {
+        const res = await axios.get(DB_URL + searchText);
         console.log(res.data);
        setCharacters(res.data)
     }
@@ -15,7 +16,8 @@ function Characters() {
     return ( 
       
        <div>
-       <GalleryCharacters list={Characters}></GalleryCharacters>
+       {/* <Search onSubmit={getCharacters}></Search> */}
+       <GalleryCharacters list={characters}></GalleryCharacters>
        </div>
   )
 }

@@ -12,4 +12,27 @@
       height: 100vh;
       background: black;
       color: white;
-  }
+      &--background{
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    &::-webkit-scrollbar {
+      width: 4px;               /* width of the entire scrollbar */
+      
+    }
+    
+  &::-webkit-scrollbar-track {
+      background: #443d3d         /* color of the tracking area */
+    }
+    
+  &::-webkit-scrollbar-thumb {
+      background-color: white;    /* color of the scroll thumb */
+      border-radius: 10px;       /* roundness of the scroll thumb */
+      border: 0px solid orange;  /* creates padding around scroll thumb */
+    }
+    }
