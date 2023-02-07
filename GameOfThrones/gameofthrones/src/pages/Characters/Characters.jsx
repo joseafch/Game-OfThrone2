@@ -4,22 +4,31 @@ import GalleryCharacters from '../../components/Gallery/GalleryCharacters/Galler
 import Search from '../../components/Search/Search';
 
 function Characters() {
-    const [Characters, setCharacters] = useState([]);
+    const [characters, setCharacters] = useState([]);
     const DB_URL = "https://api.got.show/api/show/characters/"
-    
+   let  charactersList=[...characters]
+
     const getCharacters = async (searchText = "") => {
         const res = await axios.get(DB_URL + searchText);
         console.log(res.data);
        setCharacters(res.data)
     }
+    function filter(e){
+      let name = e.target.value
+      setCharacters(charactersList.filter((character) => character.name.toLowerCase().includes(name)))
+      console.log(characters);
+    }
     useEffect(() => getCharacters, [])
     return ( 
       
        <div>
+       <input type="text" onChange={filter} />
        {/* <Search onSubmit={getCharacters}></Search> */}
-       <GalleryCharacters list={Characters}></GalleryCharacters>
+       <GalleryCharacters list={characters}></GalleryCharacters>
        </div>
   )
 }
 
-export default Characters
+export default Characters  ;
+// export { filter }
+
