@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MyLangContext } from "../../../context/myLangContext";
 import './HouseDeatilStyle.scss'
 function GalleryHouseDetail({list4,listB4} ) {
   console.log('aqui tiene q salir algo',list4);  
   console.log('esto solo pa religiones', listB4[0]);
+  const {t}=useContext(MyLangContext)
   return (
       <div className="background-house">
         {list4.length>0&& list4.map((items, index) => (
@@ -14,15 +16,15 @@ function GalleryHouseDetail({list4,listB4} ) {
                 </div>
               <div className="information">{/* div informacion*/}
               <div className="information-text">{/* div lema*/}
-                <h3 className="information-text-title">lema</h3>
+                <h3 className="information-text-title">{t('Lema')}</h3>
                 <p>{items.words}</p>
               </div>
               <div className="information-text">{/* div sede*/}
-              <h3>SEDE</h3>
+              <h3>{t('Headquarters')}</h3>
               <p>{items.seat}</p>
               </div>
               <div className="information-text">{/* div region*/}
-              <h3>REGION</h3>
+              <h3>{t('Region')}</h3>
               <p>{items.region}</p>
               </div>
             
@@ -30,13 +32,13 @@ function GalleryHouseDetail({list4,listB4} ) {
               
               {listB4.length> 0&& listB4[0].map((items2, index) => (
                 <div className="Religion-and-alliance" key={index}>
-                <div>
-                <h3>RELIGIONES</h3>
+                <div className="religion-aliance">
+                <h3>{t('Religion')}</h3>
                 <p>{items2.religion}</p>
                 </div>
                 
-                <div className="information-text">{/* div alianzas*/}
-              <h3>ALIANZAS</h3>
+                <div className="religion-aliance">{/* div alianzas*/}
+              <h3>{t('Allegiance')}</h3>
               <p>{items2.allegiance}</p>
               </div>
                 </div>
@@ -45,7 +47,7 @@ function GalleryHouseDetail({list4,listB4} ) {
               ))}
               </div>
               <div className="information-text">{/* div RELIGIONES*/}
-              <h3>FUNDACION</h3>
+              <h3>{t('Fundation')}</h3>
               <p >{items.createdAt && items.createdAt.substring(0,10).split('-').reverse().join('/') }</p>
               </div>
               </div>

@@ -1,25 +1,27 @@
+
+
 export const es = {
-    title:'Juego de Tronos',
+    Game_of_Thrones:'Juego de Tronos',
 
     foo_ch: "Personajes",
     foo_ho: "Casas",
     foo_cro: "Cronologia",
 
-    search: 'Buscar ...',
-    back: 'Volver',
+    Search: 'Buscar ...',
+    Back: 'Volver',
 
-    house: 'casa',
-    alliances: 'alianzas',
-    appearances: 'apariciones',
-    father: 'padre',
-    siblings: 'hermanos',
-    titles: 'titulos',
+    House: 'Casa',
+    Alliances: 'Aliados',
+    Appearances: 'Apariciones',
+    Father: 'Padre',
+    Siblings: 'Hermanos',
+    Titles: 'Titulos',
 
-    slogan: "lema",
-    headquarters: 'sede',
-    region: 'region',
-    allegiance: 'alianzas',
-    religion: 'religiones',
-    fundation: 'fundacion',
+    Slogan: "Eslogan",
+    Headquarters: 'Sede',
+    Region: 'Region',
+    Allegiance: 'Alianzas',
+    Religion: 'Religion',
+    Fundation: 'Fundacion',
 
 }

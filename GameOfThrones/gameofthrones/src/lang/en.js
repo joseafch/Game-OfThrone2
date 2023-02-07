@@ -1,25 +1,25 @@
 export const en = {
-    title:'Game of Thrones',
+    Game_of_Thrones :'Game of Thrones',
 
     foo_ch: "Characters",
     foo_ho: "Houses",
-    foo_cro: "Chronology",
+    foo_cro: "Cronology",
 
-    search: 'Search ...',
-    back: 'Back',
+    Search: 'Search ...',
+    Back: 'Back',
 
-    house: 'house',
-    alliances: 'alliances',
-    appearances: 'appearances',
-    father: 'father',
-    siblings: 'siblings',
-    titles: 'titles',
+    Casa: 'House',
+    Aliados:'Alliances',
+    Apariciones:'Appearances',
+    Padre:'Father',
+    Hermanos:'Siblings',
+    Titulos: 'Titles',
 
-    slogan: "slogan",
-    headquarters: 'headquarters',
-    region: 'region',
-    allegiance: 'allegiances',
-    religion: 'religions',
-    fundation: 'fundation',
+    Lema: 'Slogan', 
+    Sede :'Headquarters', 
+    Region: 'Region', 
+    Alianzas:'Allegiance', 
+    Religiones:'Religion',
+    Fundacion:'Fundation',
 
 }

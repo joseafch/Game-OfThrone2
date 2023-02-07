@@ -21,7 +21,7 @@ const Houses = () => {
   return ( 
     
      <div className='div-content'>
-       <input type="text" onChange={filter} />
+       {/* <input type="text" onChange={filter} /> */}
 
      <GalleryHouses list2={houses}></GalleryHouses>
      </div>

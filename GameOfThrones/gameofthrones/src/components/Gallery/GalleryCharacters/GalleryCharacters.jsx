@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./GalleryCharacters.scss";
 import { Link } from 'react-router-dom';
+import { MyLangContext } from '../../../context/myLangContext';
 
 
 function GalleryCharacters({list}) {
+  const {t}=useContext(MyLangContext)
   return (
     <div className='cards'>
     {list.length>0 && list.map((character, index) => (
