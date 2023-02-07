@@ -20,6 +20,8 @@ function Characters() {
     }
     useEffect(() => getCharacters, [])
     return ( 
+
+    
       
        <div>
        <input type="text" onChange={filter} />
