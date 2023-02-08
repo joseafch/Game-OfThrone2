@@ -18,14 +18,7 @@ const Header = () => {
   const houseName = locationHome.pathname.split('/Houses/').join('')
   const characterName= locationHome.pathname.split('/Characters/').join('')
 
-  // function back(){
-  //   if ('/Houses/'+houseName === locationHome.pathname){
-  //      <Link to='/Houses'></Link>
-  //   } else if ('/Characters/'+characterName === locationHome.pathname) {
-  //     <Link to='/Characters'></Link>
-  //   }
-    
-  // }
+
   let back=()=>(window.history.back())
   return ( <>
 

@@ -17,7 +17,7 @@ const Footer = () => {
  console.log('titutitu', foterLocation);
   return (
     <>
-      {('/Houses/'+houseName !== foterLocation.pathname && '/Characters/'+characterName !== foterLocation.pathname)    && <div className="footer">
+      {('/Houses/'+houseName !== foterLocation.pathname && '/Characters/'+characterName !== foterLocation.pathname)    && <div className={foterLocation.pathname !== '/' ?"footer": 'footer-home'}>
         <Link className="Link" to='/Characters'>{t('foo_ch')}</Link>
         <Link className="Link" to='/Houses'>{t('foo_ho')}</Link>
         <Link className="Link" to='/Cronology'>{t('foo_cro')}</Link>

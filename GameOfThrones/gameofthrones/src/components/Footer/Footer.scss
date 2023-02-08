@@ -1,14 +1,38 @@
 .footer{
     display: flex;
-    width: 95%;
-    padding: 25px;
+    width: 100%;
+    padding:10px;
     justify-content: space-around;
     color: white;
-    margin-bottom: 20px
-   
     
+text-decoration: none;
+
+position: absolute;
+bottom: 0;
+background: black;
 }
+.footer-home{
+    display: flex;
+    width: 100%;
+    padding:10px;
+    justify-content: space-around;
+    color: white;
+    
+text-decoration: none;
+
+position: absolute;
+bottom: 0;
+background: none;
+}
+
+
 .Link{
     color: white;
 font-size: 25px;
+text-decoration: none;
+}
+.Link:hover{
+//     color: white;
+// font-size: 25px;
+color: gray;
 }

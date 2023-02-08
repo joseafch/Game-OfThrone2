@@ -8,6 +8,7 @@ export const es = {
     foo_cro: "Cronologia",
 
     Search: 'Buscar ...',
+    
     Back: 'Volver',
 
     House: 'Casa',
@@ -23,5 +24,6 @@ export const es = {
     Allegiance: 'Alianzas',
     Religion: 'Religion',
     Fundation: 'Fundacion',
+    
 
 }

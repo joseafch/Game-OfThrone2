@@ -21,5 +21,6 @@ export const en = {
     Alianzas:'Allegiance', 
     Religiones:'Religion',
     Fundacion:'Fundation',
+    
 
 }
